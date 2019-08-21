@@ -1,1 +1,3 @@
-Este é meu primeiro arquivo
+Este é meu primeiro arquivo.
+
+Fiz uma alteração no meu arquivo.
