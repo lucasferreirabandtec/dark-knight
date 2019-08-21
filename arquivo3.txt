@@ -1,9 +1,5 @@
-
-
-
-
-
-
-
-
-Uma nova linha
+Alterações no arquivo 3
+teste
+1
+2
+3
