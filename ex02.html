@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculo de somas</h2>
+    Insira o primeiro numero: <input id="num1"><br>
+    Insira o segundo numero: <input id="num2"><br>
+    <button onclick = "soma()">+</button><br>
+    <button onclick = "sub()">-</button><br>
+    <button onclick = "mult()">x</button><br>
+    <button onclick = "divi()">/</button><br>
+
+    <div id = "mensagem" style="display: "></div>
+</body>
+</html>
+
+<script>
+   
+function soma(){
+    var numero1 = num1.value
+    var numero2 = num2.value
+    var sum = Number(numero1) + Number(numero2)
+    mensagem.innerHTML = `A soma entre ${numero1} e ${numero2} é ${sum}`
+}
+function sub(){
+    var numero1 = num1.value
+    var numero2 = num2.value
+    var subtracao = numero1 - numero2
+    mensagem.innerHTML = `A diferença entre ${numero1} e ${numero2} é ${subtracao}`
+}
+function mult() {
+    var numero1 = num1.value
+    var numero2 = num2.value
+    var multiplica = numero1 * numero2
+    mensagem.innerHTML = `O produto entre ${numero1} e ${numero2} é ${multiplica}`
+    
+}
+function divi(){
+    var numero1 = num1.value
+    var numero2 = num2.value
+    var divisao = numero1/numero2
+    mensagem.innerHTML = `A razão entre ${numero1} e ${numero2} é ${divisao}`
+}
+
+</script>
