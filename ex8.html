@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Vida do lutador: <span id="vida">1000</span><br>
+    <b id="mensagem"></b><br>
+    <img id="imagem" src="anderson.jpg" alt="" style="height: 300px"><br>
+    <button onclick="apanhar()">Apanhar</button><button onclick="concentrar()">Concentrar força</button>
+</body>
+
+</html>
+
+<script>
+
+    var valor_vida = 1000;
+
+    function apanhar() {
+        if (valor_vida > 0) {
+
+
+            valor_vida -= 100;
+            vida.innerHTML = valor_vida;
+
+            if (valor_vida <= 0) {
+                mensagem.innerHTML = 'Lutador já era!';
+                imagem.src = "spider.jpg";
+            }
+
+            else {
+                mensagem.innerHTML = 'Lutador ainda vivo!'
+            }
+        }
+    }
+    function concentrar() {
+        if (valor_vida > 0) {
+            valor_vida += 10;
+            vida.innerHTML = valor_vida;
+        }
+    }
+
+
+
+
+</script>
