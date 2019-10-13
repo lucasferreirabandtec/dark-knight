@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Informe sua idade: <input id="idade" onkeyup="ver()">
+    <div id="mensagem"></div>
+</body>
+
+</html>
+
+<script>
+    function ver() {
+        mensagem.innerHTML = '';
+        var idade_usuario = idade.value;
+        var contador = 0;
+
+        while (idade_usuario >= contador) {
+            if (contador >= 0 && contador <= 4) {
+                mensagem.innerHTML += `${contador} anos (Primeira Infância)<br>`
+            }
+            if (contador == 5 || contador == 6) {
+                mensagem.innerHTML += `${contador} anos (Pré-escolar)<br>`
+            }
+            if (contador > 6  && contador <= 10) {
+                mensagem.innerHTML += `${contador} anos (segunda infância)<br>`
+            }
+            if (contador >10 && contador <= 18) {
+                mensagem.innerHTML += `${contador} anos (Adolescência)<br>`
+            } 
+            if (contador > 18 && contador <= 50) {
+                mensagem.innerHTML += `${contador} anos (Adulto)<br>`
+            }
+            if (contador > 50 && contador <= 100) {
+                mensagem.innerHTML += `${contador} anos (Melhor idade)<br>`
+            }
+            if (contador >100) {
+                mensagem.innerHTML += `${contador} anos (Matusalém)<br>`
+            }
+            contador++
+        }
+
+    }
+</script>
